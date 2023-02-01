@@ -1,0 +1,10 @@
+.face-snap-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 45%;
+  img {
+    width: 100%;
+  }
+}

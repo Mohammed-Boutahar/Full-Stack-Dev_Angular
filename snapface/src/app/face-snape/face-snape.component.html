@@ -1,4 +1,15 @@
-<h2>{{ title }}</h2>
-<p>Mis en ligne le {{ creationDate }}</p>
-<p>{{ description }}</p>
-<p>🤌 {{ snaps }}</p>
+<div class="face-snap-card">
+  <h2>{{ faceSnape.title }}</h2>
+  <img [src]="faceSnape.imageUrl" [alt]="faceSnape.title">
+  <p>Mis en ligne le {{ faceSnape.creationDate }}</p>
+  <p>{{ faceSnape.description }}</p>
+  <hr>
+  <p>🤌 {{ faceSnape.snaps }}</p>
+  <hr>
+  <p>
+    <button (click)="onSnap()">{{buttonText}}</button>
+  </p>
+</div>
+<div>
+  <hr>
+</div>
